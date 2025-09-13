@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -23,8 +24,8 @@
 <section class="hero">
   <div class="hero-text">
     <h1>Secure Your Notes in the Cloud</h1>
-    <p>Organize, upload, and manage your notes efficiently with CloudVault</p>
-    <a href="upload.html" class="cta-button">Get Started</a>
+    <p>Organize, upload, and manage your notes efficiently</p>
+    <a href="upload.html" class="cta-button">Upload Note</a>
   </div>
 </section>
 
@@ -32,7 +33,7 @@
   <div class="card">
     <i class="fa-solid fa-file-lines fa-2x"></i>
     <h2>Total Notes</h2>
-    <p>12</p>
+    <p id="totalNotes">12</p>
   </div>
   <div class="card">
     <i class="fa-solid fa-upload fa-2x"></i>
@@ -44,6 +45,10 @@
     <h2>Storage Used</h2>
     <p>45 MB / 500 MB</p>
   </div>
+</section>
+
+<section class="charts">
+  <canvas id="storageChart" width="400" height="200"></canvas>
 </section>
 
 <footer class="footer">
@@ -70,6 +75,7 @@
   <p class="footer-bottom">© 2025 CloudVault | Project by Aashutosh Sabat</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
 
