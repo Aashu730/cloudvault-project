@@ -6,74 +6,53 @@
 <title>CloudVault - Dashboard</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-<header class="header">
+<!-- Sidebar -->
+<div class="sidebar">
   <div class="logo">☁️ CloudVault</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="upload.html">Upload Note</a>
-    <a href="view.html">View Notes</a>
-    <a href="login.html">Logout</a>
-  </nav>
-</header>
+  <ul>
+    <li><a href="index.html"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+    <li><a href="upload.html"><i class="fa-solid fa-upload"></i> Upload Notes</a></li>
+    <li><a href="view.html"><i class="fa-solid fa-file-lines"></i> View Notes</a></li>
+    <li><a href="#"><i class="fa-solid fa-user"></i> Profile</a></li>
+    <li><a href="login.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+  </ul>
+</div>
 
-<section class="hero">
-  <div class="hero-text">
-    <h1>Secure Your Notes in the Cloud</h1>
-    <p>Organize, upload, and manage your notes efficiently</p>
-    <a href="upload.html" class="cta-button">Upload Note</a>
-  </div>
-</section>
+<!-- Main Content -->
+<div class="main-content">
+  <header>
+    <h1>Welcome, Aashutosh</h1>
+    <p>Here’s your note dashboard overview</p>
+  </header>
 
-<section class="cards">
-  <div class="card">
-    <i class="fa-solid fa-file-lines fa-2x"></i>
-    <h2>Total Notes</h2>
-    <p id="totalNotes">12</p>
-  </div>
-  <div class="card">
-    <i class="fa-solid fa-upload fa-2x"></i>
-    <h2>Recent Upload</h2>
-    <p>AI_Research.pdf</p>
-  </div>
-  <div class="card">
-    <i class="fa-solid fa-database fa-2x"></i>
-    <h2>Storage Used</h2>
-    <p>45 MB / 500 MB</p>
-  </div>
-</section>
-
-<section class="charts">
-  <canvas id="storageChart" width="400" height="200"></canvas>
-</section>
-
-<footer class="footer">
-  <div class="footer-content">
-    <div class="footer-col">
-      <h3>About</h3>
-      <p>CloudVault is a cloud-based note organizer for students and professionals.</p>
+  <!-- Cards -->
+  <section class="cards">
+    <div class="card">
+      <i class="fa-solid fa-file-lines fa-2x"></i>
+      <h2>Total Notes</h2>
+      <p id="totalNotes">12</p>
     </div>
-    <div class="footer-col">
-      <h3>Quick Links</h3>
-      <a href="index.html">Home</a>
-      <a href="upload.html">Upload</a>
-      <a href="view.html">View Notes</a>
+    <div class="card">
+      <i class="fa-solid fa-upload fa-2x"></i>
+      <h2>Recent Upload</h2>
+      <p>AI_Research.pdf</p>
     </div>
-    <div class="footer-col">
-      <h3>Follow Us</h3>
-      <div class="social">
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-      </div>
+    <div class="card">
+      <i class="fa-solid fa-database fa-2x"></i>
+      <h2>Storage Used</h2>
+      <p>45 MB / 500 MB</p>
     </div>
-  </div>
-  <p class="footer-bottom">© 2025 CloudVault | Project by Aashutosh Sabat</p>
-</footer>
+  </section>
+
+  <!-- Charts -->
+  <section class="charts">
+    <canvas id="storageChart"></canvas>
+  </section>
+</div>
 
 <script src="script.js"></script>
 </body>
