@@ -1,8 +1,10 @@
+/* General Styles */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #f4f6f9;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
 /* Header */
@@ -16,8 +18,8 @@ body {
 }
 
 .header .logo {
-  font-weight: bold;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 .header nav a {
@@ -33,25 +35,40 @@ body {
 
 /* Hero Section */
 .hero {
-  background: url('https://picsum.photos/1600/500') center/cover no-repeat;
-  height: 40vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://picsum.photos/1600/500') center/cover no-repeat;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   text-align: center;
+  color: white;
 }
 
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.hero-text p {
+.hero p {
   font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Cards */
+.cta-button {
+  background: #0078ff;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #005fcc;
+}
+
+/* Cards Section */
 .cards {
   display: flex;
   justify-content: space-around;
@@ -62,22 +79,22 @@ body {
 }
 
 .card {
-  background: white;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
   padding: 2rem;
   border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
   text-align: center;
   width: 280px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.3);
 }
 
 .card i {
-  color: #0078ff;
   margin-bottom: 15px;
 }
 
@@ -85,14 +102,14 @@ body {
 .form-container {
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  margin: 3rem 0;
 }
 
 form {
   background: white;
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -100,8 +117,8 @@ form {
 
 form input, form button {
   margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px;
+  border-radius: 8px;
   border: 1px solid #ccc;
 }
 
@@ -110,6 +127,8 @@ form button {
   color: white;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 form button:hover {
@@ -127,13 +146,20 @@ table {
   width: 80%;
   border-collapse: collapse;
   background: white;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 th, td {
   padding: 1rem;
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   text-align: center;
+}
+
+th {
+  background: #0078ff;
+  color: white;
 }
 
 /* Footer */
@@ -141,66 +167,41 @@ th, td {
   background: #0078ff;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   margin-top: 2rem;
 }
 
-.footer .social a {
+.footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.footer h3 {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  display: block;
   color: white;
-  margin: 0 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .social a {
+  margin-right: 10px;
   font-size: 1.2rem;
+}
+
+.footer-bottom {
+  font-size: 0.85rem;
 }
 
 /* Login Page */
 .login-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-}
-
-.login-container {
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
-}
-
-.login-container h2 {
-  color: #0078ff;
-  margin-bottom: 0.5rem;
-}
-
-.tagline {
-  font-size: 0.9rem;
-  margin-bottom: 1.5rem;
-  color: #666;
-}
-
-.login-container input {
-  width: 100%;
-  padding: 10px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-.login-container button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  border: none;
-  background: #0078ff;
-  color: white;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.login-container button:hover {
-  background: #005fcc;
-}
+  display: flex
