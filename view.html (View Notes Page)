@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Notes - CloudVault</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">☁️ CloudVault</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="upload.html">Upload Note</a>
+    <a href="view.html">View Notes</a>
+    <a href="login.html">Logout</a>
+  </nav>
+</header>
+
+<main class="notes-list">
+  <table>
+    <tr><th>Title</th><th>File</th><th>Date</th></tr>
+    <tr><td>AI Research</td><td>AI_Research.pdf</td><td>10-Sep-2025</td></tr>
+    <tr><td>ML Report</td><td>ML_Report.docx</td><td>08-Sep-2025</td></tr>
+    <tr><td>Cloud Storage</td><td>Cloud_Storage.pptx</td><td>05-Sep-2025</td></tr>
+  </table>
+</main>
+
+<footer class="footer">
+  <p>© 2025 CloudVault | Project by Aashutosh Sabat</p>
+</footer>
+
+</body>
+</html>
