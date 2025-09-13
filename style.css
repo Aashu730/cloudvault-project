@@ -1,0 +1,206 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg,#4facfe,#00f2fe);
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.header .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://picsum.photos/1600/500') center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: -50px auto 50px auto;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 280px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.card i {
+  color: #0078ff;
+  margin-bottom: 15px;
+}
+
+/* Forms */
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #0078ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #005fcc;
+}
+
+/* Table */
+.notes-list {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background: #0078ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.footer .social a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+/* Login Page */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+.login-container h2 {
+  color: #0078ff;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background: #0078ff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background: #005fcc;
+}
